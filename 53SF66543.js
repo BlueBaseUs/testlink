@@ -46,7 +46,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			linktag[i].href = "https://fileinfo.eu.org/?redirect_to=random#?site=" + setting + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = "https://fileinfo.eu.org/?redirect_to=random#?site=",setting,aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
