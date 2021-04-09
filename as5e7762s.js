@@ -25,7 +25,7 @@ if (!setting.exceptionurl) {
 	setting.exceptionurl += ","+window.location.href;
 }
 var exception = exception();
-function showurl(datajson){
+function showurl(){
 
 	var check = false;
 	var no = 0;
@@ -33,21 +33,7 @@ function showurl(datajson){
 	var checklink = "";
 	var checkexception = "";	
 	var linktag = document.getElementsByTagName("a");
-	var links =new Array();		
 
-	var semuaartikel = datajson.feed.openSearch$totalResults.$t;
-	for(var i = 0; i < semuaartikel; i++) {
-		var urlartikel;
-		for (var s = 0; s < datajson.feed.entry[i].link.length; s++) {
-			if(datajson.feed.entry[i].link[s].rel == 'alternate') {
-				urlartikel = datajson.feed.entry[i].link[s].href;
-				break;
-			}
-		}
-		links[i] = urlartikel;
-		var randindex = Math.random() * links.length; 
-		randindex = parseInt(randindex);
-	}
 	for (var i = 0; i < linktag.length; i++) {	
 		check = false;
 		no = 0;
