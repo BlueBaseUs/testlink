@@ -24,7 +24,7 @@ if (!setting.exceptionurl) {
 }else {
 	setting.exceptionurl += ","+window.location.href;
 }
-
+var exception = exception();
 function showurl(){
 	var check = false;
 	var no = 0;
