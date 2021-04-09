@@ -25,6 +25,8 @@ if (!setting.exceptionurl) {
 	setting.exceptionurl += ","+window.location.href;
 }
 var exception = exception();
+var sScriptSrc = "https://apis.google.com/js/client.js?onload=callback"
+loadScript(showurl);
 function showurl(){
 
 	var check = false;
