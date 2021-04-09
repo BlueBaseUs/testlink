@@ -32,7 +32,8 @@ function showurl(){
 	var checklink = "";
 	var checkexception = "";	
 	var linktag = document.getElementsByTagName("a");
-
+	var links =new Array();	
+	
 	for (var i = 0; i < linktag.length; i++) {	
 		check = false;
 		no = 0;
@@ -45,7 +46,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			linktag[i].href = "https://github.com/" + setting.path + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = "https://raw.githack.com/?redirect_to=random#?site=" + setting.path + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
