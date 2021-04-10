@@ -12,13 +12,6 @@ function exception(){
 	exception = setting.exceptionurl.split(",");
 	return exception;
 }
-function (){
-	var CategoryTag = new Array();	
-	setting.CatTag = setting.CatTag;
-	CategoryTag = setting.CatTag.split(",");
-	setting.CatTag =Math.floor((Math.random()*5)+ 1); setting.CatTag=null;
-}
-
 
 function convertstr(str) {
 	return str.replace(/^\s+/, '').replace(/\s+$/, '');
@@ -53,7 +46,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			linktag[i].href = setting.domainSafelink + setting.catag + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = setting.domainSafelink + setting.catag=Math.floor((Math.random()*5)+ 1) + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
