@@ -12,11 +12,10 @@ function exception(){
 	exception = setting.exceptionurl.split(",");
 	return exception;
 }
-function CategoryTag(){
+function (){
 	var CategoryTag = new Array();	
 	setting.CatTag = setting.CatTag;
 	CategoryTag = setting.CatTag.split(",");
-	return CategoryTag;
 	setting.CatTag =Math.floor((Math.random()*5)+ 1); setting.CatTag=null;
 }
 
