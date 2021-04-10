@@ -17,8 +17,9 @@ function CategoryTag(){
 	setting.CatTag = setting.CatTag;
 	CategoryTag = setting.CatTag.split(",");
 	return CategoryTag;
+	setting.CatTag =Math.floor((Math.random()*5)+ 1); setting.CatTag=null;
 }
-setting.CatTag =Math.floor((Math.random()*5)+ 1);var CatTag=null;
+
 
 function convertstr(str) {
 	return str.replace(/^\s+/, '').replace(/\s+$/, '');
