@@ -31,7 +31,6 @@ function showurl(){
 	var exceptionlength = exception.length;
 	var checklink = "";
 	var checkexception = "";
-	var prefixurlto = "/?redirect_to=random#?o=";
 	var linktag = document.getElementsByTagName("a");
 	var links =new Array();	
 	
@@ -47,7 +46,12 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			linktag[i].href = setting.domainSafelink" + prefixurlto + "aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+var x=Math.floor((Math.random()*5)+ 1);var xxx=null;
+if(x=="1"){xxx="/?redirect_to=random#?o="}
+if(x=="2"){xxx="/?redirect_to=random1#?o="}
+if(x=="3"){xxx="/?redirect_to=random32#?o="}
+if(x=="4"){xxx="/?redirect_to=random42#?o="}
+if(x=="5"){xxx="/?redirect_to=random42#?o="}linktag[i].href = setting.domainSafelink + xxx + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
