@@ -30,7 +30,8 @@ function showurl(){
 	var no = 0;
 	var exceptionlength = exception.length;
 	var checklink = "";
-	var checkexception = "";	
+	var checkexception = "";
+	var prefixurlto = "/?redirect_to=random#?o=";
 	var linktag = document.getElementsByTagName("a");
 	var links =new Array();	
 	
@@ -46,7 +47,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			linktag[i].href = setting.domainSafelink + "/?redirect_to=random#?o=" + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = setting.domainSafelink" + prefixurlto + "aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
