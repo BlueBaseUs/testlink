@@ -46,9 +46,9 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			setting.CatTag = Math.floor((Math.random()*5)+ 1);setting.CatTag=null;
-			setting = setting.CatTag.split(",");return setting;
-			linktag[i].href = setting.domainSafelink + setting.CatTag + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			setting.CatTag = CatTag[Math.floor(Math.random() * CatTag.length)];
+			setting.CatTag = xxx;
+			linktag[i].href = setting.domainSafelink + xxx + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
