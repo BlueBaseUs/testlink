@@ -46,7 +46,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
+			var xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
 			linktag[i].href = setting.domainSafelink + xxx + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
