@@ -47,11 +47,11 @@ function showurl(){
 		}
 		if (check == false) {
 	var YV=Math.floor((Math.random()*5)+ 1);var vvv=null;
-if(YV=="1"){vvv="2A27F23B8B"}
-if(YV=="2"){vvv="50EE1242118BB"}
-if(YV=="3"){vvv="8A740AB"}
-if(YV=="4"){vvv="D54F460"}
-if(YV=="5"){vvv="C3BF36332"}
+if(YV=="1"){vvv="f9401d6531"}
+if(YV=="2"){vvv="1603a67180a5"}
+if(YV=="3"){vvv="d43474a5"}
+if(YV=="4"){vvv="a4ede56fcd8acd4c"}
+if(YV=="5"){vvv="657a83f6a"}
 			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
 			linktag[i].href = setting.domainSafelink + xxx + "?get=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
