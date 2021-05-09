@@ -54,7 +54,7 @@ if(YV=="3"){vvv="d43474a5"}
 if(YV=="4"){vvv="a4ede56fcd8acd4c"}
 if(YV=="5"){vvv="657a83f6a"}
 			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
-			linktag[i].href = setting.domainSafelink + xxx + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = setting.domainSafelink + xxx + setting.CatLinkN + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
