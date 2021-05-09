@@ -47,7 +47,7 @@ function showurl(){
 		}
 		if (check == false) {
 	var YV=Math.floor((Math.random()*5)+ 1);var vvv=null;
-	var catName = '<?php the_category(', '); ?>';
+	
 if(YV=="1"){vvv="f9401d6531"}
 if(YV=="2"){vvv="1603a67180a5"}
 if(YV=="3"){vvv="d43474a5"}
