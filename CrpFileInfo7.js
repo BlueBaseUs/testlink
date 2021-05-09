@@ -47,13 +47,14 @@ function showurl(){
 		}
 		if (check == false) {
 	var YV=Math.floor((Math.random()*5)+ 1);var vvv=null;
+	var catName = '?<?php the_category(', '); ?> ';
 if(YV=="1"){vvv="f9401d6531"}
 if(YV=="2"){vvv="1603a67180a5"}
 if(YV=="3"){vvv="d43474a5"}
 if(YV=="4"){vvv="a4ede56fcd8acd4c"}
 if(YV=="5"){vvv="657a83f6a"}
 			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
-			linktag[i].href = setting.domainSafelink + xxx + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = setting.domainSafelink + catName + xxx + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
