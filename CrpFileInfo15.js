@@ -46,7 +46,7 @@ function showurl(){
 			no++;
 		}
 		if (check == false) {
-	var YV=Math.floor((Math.random()*5)+ 1);var vvv=null;
+	var YV=Math.floor((Math.random()*11)+ 1);var vvv=null;
 	let rdr2 = (Math.random() + 1).toString(36).substring(2, 15);
 	let rdr3 = (Math.random()).toString(36).substring(1, 17);
 if(YV=="1"){vvv="f9401d6531"}
@@ -54,8 +54,14 @@ if(YV=="2"){vvv="1603a67180a5"}
 if(YV=="3"){vvv="d43474a5"}
 if(YV=="4"){vvv="a4ede56fcd8acd4c"}
 if(YV=="5"){vvv="657a83f6a"}
+if(YV=="6"){vvv="f0bb87a2892365fa78c9a9e3260"}
+if(YV=="7"){vvv="039d2bd17e20f98352a7"}
+if(YV=="8"){vvv="48fb1bb2b066f10ec285"}
+if(YV=="9"){vvv="a5d38e34566"}
+if(YV=="10"){vvv="9d18143de26f24e38"}
+if(YV=="11"){vvv="e759790459996196f101d94dfc7bd8"}
 			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
-			linktag[i].href = setting.domainSafelink + xxx + "?utm_key=" + rdr2 + "&utm_key=" + rdr3 + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			linktag[i].href = setting.domainSafelink + xxx + "?utm_key=" + rdr2 + "&utm_conten=" + rdr3 + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
