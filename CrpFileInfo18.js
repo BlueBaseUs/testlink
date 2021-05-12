@@ -60,8 +60,9 @@ if(YV=="8"){vvv="48fb1bb2b066f10ec285"}
 if(YV=="9"){vvv="a5d38e34566"}
 if(YV=="10"){vvv="9d18143de26f24e38"}
 if(YV=="11"){vvv="e759790459996196f101d94dfc7bd8"}
-			xxx = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
-			linktag[i].href = setting.domainSafelink + xxx + "?utm_key=" + rdr2 + "&utm_conten=" + rdr3 + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
+			CatXonomy = setting.catxonom;
+			PermalCat = setting.CatTag[Math.floor(Math.random() * setting.CatTag.length)];
+			linktag[i].href = setting.domainSafelink + PermalCat + "/"+ CatXonomy +"/" "?utm_key=" + rdr2 + "&utm_conten=" + rdr3 + "?token=" + vvv + aesCrypto.encrypt(convertstr(linktag[i].href),convertstr('root'));
 			linktag[i].rel = "nofollow";
 			linktag[i].target = "_blank";
 		}
